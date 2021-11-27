@@ -30,10 +30,10 @@ Network.prototype.getLastBlock = function() {
 
 Network.prototype.createNewTransaction = function(amount, sender, recipent) {
     const newTransaction = {
-        amount:amount,
+        importance:amount,
         sender:sender,
         recipent:recipent,
-        transactionId: uuid().split('-').join('')
+        messageId: uuid().split('-').join('')
     };
     return newTransaction;
 }
